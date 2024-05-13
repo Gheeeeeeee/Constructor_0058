@@ -7,7 +7,7 @@ private:
     int panjang;
 public:
     angka(int); //Constructor
-    angka(); //Destructor
+    ~angka(); //Destructor
     void cetakData();
     void isiData();
 };
@@ -19,7 +19,7 @@ angka::angka(int i) {//Constructor
     isiData();
 }
 
-angka::angka(int i) { //Destructor
+angka::~angka(){ //Destructor
     cout << endl;
     cetakData();
     delete[]arr;
@@ -47,4 +47,3 @@ int main()
     return 0;
 }//Destructor dipanggil
 
-\
